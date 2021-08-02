@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokerFi</title>
+    <link rel="icon" href="./pokerfi.ico" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .index {
+            height: 100%;
+            margin: 0 auto;
+            display: none;
+
+        }
+
+        .index iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        #index {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        #video {
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+            z-index: 9;
+        }
+
+        .back {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            display: none;
+            z-index: 999;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="index">
+        <div class="back">
+            <img src="./pass.png" alt="">
+        </div>
+        <video preload="auto" src="./res/open_animation.mp4" id="video" muted=true autoplay></video>
+    </div> -->
+    <div class="index">
+        <iframe src="" frameborder="0" id='iframe'></iframe>
+    </div>
+    <script>
+        window.onload = function () {
+            var indexWidth = document.getElementsByClassName('index')[0]
+            // var video = document.getElementById('index')
+            // var videoWidth = document.getElementById('video')
+            var iframe = document.getElementById('iframe')
+            let baseUrl = "./game/?version=1.0.8"
+            function getVar(variable) {
+                var query = window.location.search.substring(1);
+                var vars = query.split("&");
+                for (var i = 0; i < vars.length; i++) {
+                    var pair = vars[i].split("=");
+                    if (pair[0] == variable) { return pair[1]; }
+                }
+                return (false);
+            }
+
+            console.log(getVar("address"))
+            if (getVar("address")) {
+                baseUrl = baseUrl + '&address=' + getVar("address")
+            }
+
+            // 获取浏览器宽高
+            let allHeight = ''
+            let allWidth = ''
+            allWidth = window.innerWidth
+            allHeight = window.innerHeight
+
+            // 检测访问环境
+            var isAndroid
+            var isIos
+            var u = navigator.userAgent
+            isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1
+            isIos = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)
+
+            if (isIos || isAndroid) {
+                indexWidth.remove(iframe)
+            } else {
+                iframe.src = baseUrl
+                if (allWidth > allHeight) {
+                    indexWidth.style.width = (allHeight / 1334 * 750) + 'px'
+                } else {
+                    indexWidth.style.width = '100%'
+                }
+
+                //if (allWidth > allHeight) {
+                   // video.style.width = (allHeight / 1334 * 750) + 'px'
+                //} else {
+                 //   video.style.width = '100%'
+                //}
+            }
+
+            function toGame() {
+                if (isIos || isAndroid) {
+                    window.location.href = baseUrl
+                }
+                else {
+                    indexWidth.style.display = "block"
+                    // video.remove()
+                }
+            }
+
+            toGame();
+
+            // videoWidth.addEventListener('ended', function () { //结束
+            //     toGame()
+            // }, false)
+
+            //var backDiv = document.getElementsByClassName('back')[0]
+    //         videoWidth.addEventListener('click', function () {
+    //             if (backDiv.style.display == "block") {
+    //                 return
+    //             }
+    //             backDiv.style.display = "block"
+    //             setTimeout(() => {
+    //                 backDiv.style.display = "none"
+    //             }, 2000)
+				// videoWidth.muted = false;
+    //         })
+
+			
+            // backDiv.addEventListener('click', function () {
+            //     toGame()
+            // })
+        }
+    </script>
+</body>
+
+</html>

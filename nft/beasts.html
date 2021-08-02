@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        #index {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="index" id='index'>
+
+    </div>
+    <script>
+        window.onload = function () {
+            var url = window.location.href
+            var myParent = document.getElementById("index");
+            var myImage = document.createElement("img");
+            if (url.indexOf("?") != -1) {
+                var params = url.split('?')[1].split('=')[1]
+                $.getJSON("https://app.pokerfi.network/nft/beast.json?r="+Math.random(), function (data) {
+                    console.log(data)
+                    var beastList = data.beast
+                    if (beastList.length > 0) {
+                        for (var key in beastList) {
+                            if (beastList[key] == params) {
+                                myImage.src = data.path + '/' + params + '.png';
+                                console.log(myImage.src)
+                                myParent.appendChild(myImage);
+                                return
+                            }
+                        }
+                        myImage.src = data.path + '/' + data.default;
+                        myParent.appendChild(myImage);
+                    } else {
+                        myImage.src = data.path + '/' + data.default;
+                        myParent.appendChild(myImage);
+                    }
+                })
+            }
+        }
+    </script>
+</body>
+
+</html>
