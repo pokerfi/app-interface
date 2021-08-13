@@ -240,6 +240,7 @@
     "DataLoad.type60": "Query inviter information",
     "DataLoad.type61": "Load JOSN data",
     "DataLoad.type62": "Load Setting data",
+    "DataLoad.type63": "Query PK value",
     "searchTips": "No communities match the search criteria",
     "approve.alert.tip1": "You haven't authorized this contract to operate PK, authorize now?",
     "approve.alert.tip2": "You haven't authorized this contract to operate USDT, authorize now?",
@@ -282,5 +283,6 @@
     "powerTips": "Insufficient strength to submit",
     "RecordData.type31": "Permutation Pk-1",
     "tips_60": "The final consumption is subject to the transaction price",
+    "pk_tip_blind": "Your PK balance is insufficient",
     "Pk_biNum": "1 PK-1 can be purchased with {0} card slots"
 }
