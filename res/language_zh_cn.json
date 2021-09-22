@@ -242,7 +242,8 @@
     "DataLoad.type60": "查询邀请人信息",
     "DataLoad.type61": "加载JOSN数据",
     "DataLoad.type62": "加载设置资源",
-    "DataLoad.type63": "查询PK价值",
+    "DataLoad.type63": "查询PK动态价值",
+    "DataLoad.type64": "查询PK固定价值",
     "searchTips": "没有符合搜索条件的社区",
     "approve.alert.tip1": "您还未授权此合约操作PK，是否授权？",
     "approve.alert.tip2": "您还未授权此合约操作USDT，是否授权？",
@@ -285,5 +286,6 @@
     "input": "请输入",
     "powerTips": "算力不足无法提交",
     "pk_tip_blind": "您的PK余额不足",
+    "main_linshi": "第15轮后正常开放",
     "Pk_biNum": "1 PK-1可限购{0}组卡槽"
 }
