@@ -1,7 +1,20 @@
-        Announcement about PokerFi's first round of card sales
+          The fifth active destruction of PokerFi
 
-    The subscription for PokerFi Planet Genesis card slot has been closed at 24:00 on July 18, 2021 (GMT+8). The first round of card sales will be officially launched at 13:00 on July 19, and the cards will be sold every 28,800 blocks height (approximately 24 hours).
+    Running statistical cycle: round 14 -- round 17
 
-    This time, 10000 cards will be sold for a period of 10 days, please purchase the cards according to the needs of all users.
+    30% of the energy fee income, the second PK coin buyback destruction, a total of 12564.3909 PK coin destruction
 
-                                         24:00 on July 18, 2021
+    30% energy cost PK buyback execution address:
+    0x80Ceb7dBD482e2FD8c375099C9159B73A8A39C8E
+
+    Destroy hash:
+    https://bscscan.com/tx/0x94e0300cf3567f5a06d78c1eb569115db3ca777cff30e00056e4ce76a2394fb1
+
+    Extreme deflation:
+    This period destroyed 12564.3909 PK> 4.51% of the total output
+
+    Extreme deflation creates infinite appreciation
+    PokerFi reimagines everything!
+
+                                                               PokerFi
+                                                              2021.10.12
