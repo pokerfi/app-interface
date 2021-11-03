@@ -363,6 +363,7 @@
     "BlindBoxPanl.tips": "Points insufficient balance",
     "MinPool.Points": "Points",
     "MinPool.mine": "Mine total pledge：",
+    "MinPool.ming": "Mining total pledge：",
     "BlidBox.Points": "PS (Points) The contract for purchasing the blind box has been deployed. Is the authorization confirmed?",
     "JoinItme.tips": "You have been connected to the mining pool, you cannot pledge PK",
     "PsToken.approve": "You haven't authorized this contract to operate PS, authorize now?",

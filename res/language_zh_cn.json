@@ -364,6 +364,7 @@
     "BlindBoxPanl.tips": "积分余额不够",
     "MinPool.Points": "积分",
     "MinPool.mine": "矿场总质押：",
+    "MinPool.ming": "矿池总质押：",
     "BlidBox.Points": "PS（积分）购买盲盒的合约已部署，是否确认授权？",
     "JoinItme.tips": "您已接入过矿池，不能在进行质押PK",
     "PsToken.approve": "您还未授权此合约操作PS，是否授权？",
