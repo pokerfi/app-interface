@@ -1,20 +1,20 @@
-          The fifth active destruction of PokerFi
 
-    Running statistical cycle: round 14 -- round 17
 
-    30% of the energy fee income, the second PK coin buyback destruction, a total of 12564.3909 PK coin destruction
+      PokerFi planet officially launched the card sales address USDT repurchase PK announcement
 
-    30% energy cost PK buyback execution address:
-    0x80Ceb7dBD482e2FD8c375099C9159B73A8A39C8E
+      Dear PokerFi players：
 
-    Destroy hash:
-    https://bscscan.com/tx/0x94e0300cf3567f5a06d78c1eb569115db3ca777cff30e00056e4ce76a2394fb1
+      By the final decision of the first Consensus Committee of PokerFi Community, a total of 300,000 USDT PK buyback program will be officially launched on October 30, 24:00 (GMT+8), as follows:
 
-    Extreme deflation:
-    This period destroyed 12564.3909 PK> 4.51% of the total output
+      1. 70% of the card sales address will support 210,000 USDT, which will be transferred to the buyback execution address in stages for PK buyback and destruction. Implementation address publicity:
 
-    Extreme deflation creates infinite appreciation
-    PokerFi reimagines everything!
+      0x8D0391e5f6eC193119647628B31197134441d6Ff
 
-                                                               PokerFi
-                                                              2021.10.12
+      2. 30% card sales address will support 90,000 USDT, transferred to the execution address, PK buyback and support transaction flow pool construction. Implementation address publicity:
+
+      0xAa2bA9678f927195830354aCdDc60b964D4f97C2
+
+      After this resolution takes effect, The first Consensus Committee was dissolved，all USDT usage plans of future card sales addresses will take effect through the PKS community governance mechanism.A new starting point, a new journey, and the implementation of the CONCEPT of DAO on PokerFi planet will thoroughly stimulate the creativity of all players and witness the future of PokerFi!
+
+                                                              PokerFi
+                                                              10.30
