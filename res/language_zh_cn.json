@@ -368,5 +368,6 @@
     "BlidBox.Points": "PS（积分）购买盲盒的合约已部署，是否确认授权？",
     "JoinItme.tips": "您已接入过矿池，不能在进行质押PK",
     "PsToken.approve": "您还未授权此合约操作PS，是否授权？",
-    "PointsTips": "积分：指矿池产生的一种链上凭证。积分简称符号: PS"
+    "PointsTips": "积分：指矿池产生的一种链上凭证。积分简称符号: PS",
+    "main_linshi": "暂时关闭 第25轮开放"
 }
